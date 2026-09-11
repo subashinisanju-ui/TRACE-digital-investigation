@@ -1,22 +1,49 @@
-<h1>🔎 TRACE — Digital Investigation Platform</h1>
+# 🔎 TRACE — Digital Investigation Platform
 
-<p align="center">
-  <img src="image.png" alt="TRACE Landing Page" width="900">
-</p>
+TRACE is an interactive digital investigation platform designed to simulate a
+real-world digital investigation case.
 
-<h2>🕵️ About TRACE</h2>
+The platform allows investigators to examine evidence, solve puzzles,
+interrogate suspects, identify contradictions, connect evidence, and finally
+submit an investigation report.
 
-<p>
-TRACE is a digital investigation platform designed to help investigators
-organize evidence, analyze connections, and build a clear case timeline.
-</p>
+---
 
-<h2>✨ Features</h2>
+## 🚀 Features
 
-<ul>
-  <li>📂 Evidence Management</li>
-  <li>🔗 Evidence Connections</li>
-  <li>🕐 Investigation Timeline</li>
-  <li>🔍 Case Investigation Workflow</li>
-  <li>📊 Interactive Investigation Dashboard</li>
-</ul>
+- 🕵️ Interactive digital investigation
+- 🔐 Encrypted transmission and Caesar cipher puzzle
+- 📂 Evidence unlocking system
+- 🧩 Multiple evidence puzzles
+- 👤 Suspect dossiers
+- 💬 Suspect interrogation system
+- ⚠️ Contradiction detection
+- 🔗 Investigation evidence board
+- 🎯 Final accusation system
+- 📋 Investigation report generation
+- 📥 Downloadable case report
+
+---
+
+## 🛠️ Tech Stack
+
+- HTML
+- CSS
+- JavaScript
+- React
+- Vite
+
+---
+
+## 📂 Project Structure
+
+```text
+TRACE-digital-investigation/
+│
+├── public/
+├── src/
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
