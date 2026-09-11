@@ -1,16 +1,46 @@
-# React + Vite
+# TRACE — Digital Investigation System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TRACE is an interactive single-page digital investigation website built with React.
 
-Currently, two official plugins are available:
+The project presents a fictional cybersecurity case where the user investigates a suspicious login, decrypts evidence, examines suspects, solves progressive clues, connects evidence, and files a final investigation report.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Interactive case investigation interface
+- Progressive evidence unlocking
+- Caesar cipher decryption puzzle
+- Multiple evidence stages
+- Suspect dossiers
+- Interactive suspect interrogation
+- Investigation board
+- Evidence-based deductions
+- Final accusation and investigation report
+- Responsive interface
+- Cybersecurity-inspired UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the ESLint configuration
+- HTML
+- CSS
+- JavaScript
+- React
+- React Hooks
+- Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## React Concepts Used
+
+The project uses React state and event handling to control the investigation flow.
+
+Examples include:
+- `useState` for managing case progress
+- Conditional rendering for locked/unlocked evidence
+- Event handlers for buttons and user interactions
+- Component-based React structure
+- Dynamic UI updates based on investigation state
+
+## How to Run Locally
+
+### 1. Clone the repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_LINK
