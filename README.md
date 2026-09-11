@@ -28,7 +28,7 @@
 
 ### TRACE Landing Page
 
-![TRACE Landing Page](image.png)
+![TRACE Landing Page](trace.png)
 
 ---
 
