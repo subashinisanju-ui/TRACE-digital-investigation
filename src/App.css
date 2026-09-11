@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Orbitron:wght@400;700&family=Space+Grotesk:wght@400;500;600&display=swap');
+
+
+/* ================= ROOT VARIABLES ================= */
+
+:root {
+  --background: #070b14;
+  --panel: #0d1526;
+
+  --primary-blue: #4c7dff;
+  --bright-blue: #63b3ff;
+
+  --text: #c9d8ff;
+  --muted-text: #7f8db3;
+
+  --warning: #ff5c5c;
+}
+
+
+/* ================= GLOBAL ================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  background-color: var(--background);
+
+  color: var(--text);
+
+  font-family: 'Space Grotesk', sans-serif;
+
+  min-height: 100vh;
+}
+
+
+/* ================= BINARY BACKGROUND ================= */
+
+.binary-background {
+
+  position: fixed;
+
+  inset: 0;
+
+  overflow: hidden;
+
+  pointer-events: none;
+
+  z-index: 0;
+
+}
+
+
+.binary-digit {
+
+  position: absolute;
+
+  font-family: 'JetBrains Mono', monospace;
+
+  color: var(--bright-blue);
+
+  opacity: 0.35;
+
+  text-shadow:
+    0 0 10px rgba(99, 179, 255, 0.8);
+
+  animation-name: float;
+
+  animation-duration: 4s;
+
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: infinite;
+
+}
+
+
+/* ================= BINARY ANIMATION ================= */
+
+@keyframes float {
+
+  0% {
+
+    transform: translateY(0);
+
+  }
+
+  50% {
+
+    transform: translateY(-100px);
+
+  }
+
+  100% {
+
+    transform: translateY(0);
+
+  }
+
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+
+  position: relative;
+
+  z-index: 1;
+
+  padding: 30px 60px;
+
+}
+
+
+.logo {
+
+  font-family: 'Orbitron', sans-serif;
+
+  font-size: 2rem;
+
+  letter-spacing: 8px;
+
+  margin: 0;
+
+  color: var(--text);
+
+}
+
+
+/* ================= HERO / START SCREEN ================= */
+
+.hero {
+
+  position: relative;
+
+  z-index: 1;
+
+  max-width: 750px;
+
+  margin: 100px auto;
+
+  text-align: center;
+
+  padding: 40px 20px;
+
+}
+
+
+.case-number {
+
+  font-family: 'JetBrains Mono', monospace;
+
+  color: var(--primary-blue);
+
+  font-size: 0.9rem;
+
+  letter-spacing: 3px;
+
+}
+
+
+.system-text {
+
+  color: var(--muted-text);
+
+  font-family: 'JetBrains Mono', monospace;
+
+  font-size: 0.85rem;
+
+  letter-spacing: 1px;
+
+}
+
+
+.hero h3 {
+
+  font-family: 'Orbitron', sans-serif;
+
+  font-size: 2.7rem;
+
+  margin: 30px 0 20px;
+
+}
+
+
+.description {
+
+  color: var(--muted-text);
+
+  font-size: 1.1rem;
+
+  line-height: 1.7;
+
+  max-width: 600px;
+
+  margin: auto;
+
+}
+
+
+/* ================= BUTTONS ================= */
+
+button {
+
+  margin-top: 25px;
+
+  padding: 14px 25px;
+
+  background-color: var(--primary-blue);
+
+  color: var(--background);
+
+  border: none;
+
+  border-radius: 4px;
+
+  font-family: 'JetBrains Mono', monospace;
+
+  font-weight: 500;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+
+}
+
+
+button:hover {
+
+  background-color: var(--bright-blue);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 5px 20px rgba(99, 179, 255, 0.25);
+
+}
+
+
+/* ================================================= */
+/* =========== INVESTIGATION SYSTEM ================= */
+/* ================================================= */
+
+.investigation-system {
+
+  position: relative;
+
+  z-index: 1;
+
+  max-width: 1100px;
+
+  margin: 40px auto 100px;
+
+  padding: 20px;
+
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.investigation-nav {
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-bottom: 50px;
+
+  padding: 15px;
+
+  background-color: rgba(13, 21, 38, 0.85);
+
+  border: 1px solid rgba(99, 179, 255, 0.2);
+
+}
+
+
+.investigation-nav button {
+
+  margin: 0;
+
+  padding: 12px 18px;
+
+  background-color: transparent;
+
+  color: var(--muted-text);
+
+  border: 1px solid transparent;
+
+  border-radius: 2px;
+
+  font-size: 0.8rem;
+
+}
+
+
+.investigation-nav button:hover {
+
+  color: var(--bright-blue);
+
+  border-color: var(--bright-blue);
+
+  transform: none;
+
+  box-shadow: none;
+
+}
+
+
+/* ================= GAME PAGE ================= */
+
+.game-page {
+
+  background-color: rgba(13, 21, 38, 0.92);
+
+  border: 1px solid rgba(99, 179, 255, 0.25);
+
+  padding: 45px;
+
+  min-height: 450px;
+
+  box-shadow:
+
+    0 0 40px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.game-page h2 {
+
+  font-family: 'Orbitron', sans-serif;
+
+  letter-spacing: 2px;
+
+  font-size: 1.5rem;
+
+  margin-top: 0;
+
+}
+
+
+/* ================= CASE FILE ================= */
+
+.case-description {
+
+  margin-top: 30px;
+
+  padding-left: 20px;
+
+  border-left: 2px solid var(--primary-blue);
+
+  color: var(--muted-text);
+
+  line-height: 1.7;
+
+}
+
+
+/* ================= DATA PACKET ================= */
+
+.data-packet {
+
+  margin: 50px auto;
+
+  padding: 35px;
+
+  max-width: 550px;
+
+  text-align: center;
+
+  background:
+
+    linear-gradient(
+      135deg,
+      rgba(13, 21, 38, 0.95),
+      rgba(8, 13, 25, 0.95)
+    );
+
+  border: 1px solid var(--bright-blue);
+
+  box-shadow:
+
+    0 0 25px rgba(99, 179, 255, 0.15),
+
+    inset 0 0 25px rgba(99, 179, 255, 0.03);
+
+  animation: packetAppear 0.6s ease-out;
+
+}
+
+
+/* ================= PACKET ANIMATION ================= */
+
+@keyframes packetAppear {
+
+  from {
+
+    opacity: 0;
+
+    transform: scale(0.85) translateY(30px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: scale(1) translateY(0);
+
+  }
+
+}
+
+
+.packet-title {
+
+  font-family: 'Orbitron', sans-serif;
+
+  color: var(--bright-blue);
+
+  letter-spacing: 2px;
+
+  font-size: 1rem;
+
+}
+
+
+/* ================= DECRYPTION SCREEN ================= */
+
+.decryption-screen {
+
+  margin: 50px auto;
+
+  padding: 35px;
+
+  max-width: 700px;
+
+  text-align: center;
+
+  border: 1px solid var(--primary-blue);
+
+  background-color: rgba(7, 11, 20, 0.8);
+
+}
+
+
+.encrypted-message {
+
+  margin: 30px 0;
+
+  padding: 20px;
+
+  font-family: 'JetBrains Mono', monospace;
+
+  letter-spacing: 3px;
+
+  color: var(--bright-blue);
+
+  background-color: rgba(0, 0, 0, 0.3);
+
+  border: 1px dashed var(--muted-text);
+
+}
+
+
+/* ================= CLUE HINT ================= */
+
+.clue-hint {
+
+  margin-top: 25px;
+
+  color: var(--warning);
+
+  font-family: 'JetBrains Mono', monospace;
+
+  font-size: 0.85rem;
+
+}
+
+
+/* ================================================= */
+/* ================= EVIDENCE ======================= */
+/* ================================================= */
+
+.locked-message {
+
+  margin-top: 50px;
+
+  padding: 35px;
+
+  text-align: center;
+
+  border: 1px dashed var(--muted-text);
+
+  color: var(--muted-text);
+
+  font-family: 'JetBrains Mono', monospace;
+
+}
+
+
+/* ================================================= */
+/* ================= SUSPECTS ======================= */
+/* ================================================= */
+
+.suspect-card {
+
+  margin: 25px 0;
+
+  padding: 25px;
+
+  background-color: rgba(7, 11, 20, 0.7);
+
+  border-left: 3px solid var(--primary-blue);
+
+  transition: 0.25s;
+
+}
+
+
+.suspect-card:hover {
+
+  transform: translateX(8px);
+
+  border-left-color: var(--bright-blue);
+
+  background-color: rgba(13, 21, 38, 0.95);
+
+}
+
+
+.suspect-card h3 {
+
+  font-family: 'Orbitron', sans-serif;
+
+  letter-spacing: 1px;
+
+  margin-top: 0;
+
+  color: var(--bright-blue);
+
+}
+
+
+.suspect-card p {
+
+  color: var(--muted-text);
+
+  line-height: 1.6;
+
+}
+
+
+/* ================================================= */
+/* ============ INVESTIGATION BOARD ================= */
+/* ================================================= */
+
+.investigation-board {
+
+  margin-top: 40px;
+
+  display: grid;
+
+  grid-template-columns:
+
+    repeat(
+      auto-fit,
+      minmax(180px, 1fr)
+    );
+
+  gap: 25px;
+
+}
+
+
+.board-clue {
+
+  padding: 30px 20px;
+
+  min-height: 120px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  font-family: 'JetBrains Mono', monospace;
+
+  color: var(--text);
+
+  background-color: rgba(7, 11, 20, 0.8);
+
+  border: 1px solid var(--muted-text);
+
+  transition: 0.3s;
+
+}
+
+
+.board-clue:hover {
+
+  border-color: var(--bright-blue);
+
+  transform: translateY(-5px);
+
+  box-shadow:
+
+    0 10px 30px rgba(99, 179, 255, 0.1);
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+  header {
+
+    padding: 25px;
+
+  }
+
+
+  .logo {
+
+    font-size: 1.5rem;
+
+    letter-spacing: 5px;
+
+  }
+
+
+  .hero {
+
+    margin: 60px auto;
+
+  }
+
+
+  .hero h3 {
+
+    font-size: 2rem;
+
+  }
+
+
+  .game-page {
+
+    padding: 25px;
+
+  }
+
+
+  .investigation-nav {
+
+    gap: 8px;
+
+  }
+
+
+  .investigation-nav button {
+
+    padding: 10px;
+
+    font-size: 0.7rem;
+
+  }
+
+
+  .encrypted-message {
+
+    font-size: 1rem;
+
+    letter-spacing: 1px;
+
+    word-break: break-word;
+
+  }
+
+}
