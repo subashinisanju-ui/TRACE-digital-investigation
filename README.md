@@ -1,69 +1,45 @@
-# TRACE — Digital Investigation System
+---
 
-TRACE is an interactive single-page digital investigation website built with React.
+## Demo Video
 
-The project presents a fictional cybersecurity case called **"The Ghost Login"**, where the user investigates a suspicious system access, decrypts evidence, examines suspects, solves progressive clues, connects evidence, and finally files an investigation report.
+[Watch the TRACE Demo Video](https://drive.google.com/file/d/1WGZgevyOZ9xnn6SQUDBHjoS4TltOkMri/view?usp=sharing)
 
 ---
 
-## Features
+## How to Use
 
-- Interactive cybersecurity investigation interface
-- Fictional case investigation storyline
-- Caesar cipher decryption puzzle
-- Progressive evidence unlocking
-- Multiple evidence stages
-- Suspect dossiers
-- Interactive suspect interrogation
-- Contradiction-based investigation
-- Investigation board
-- Evidence-based deductions
-- Final accusation system
-- Case closure sequence
-- Investigation report generation
-- Downloadable case report
-- Responsive user interface
-- Cybersecurity-inspired visual design
+1. Start the investigation.
+2. Open the case file.
+3. Examine the encrypted transmission.
+4. Solve the Caesar cipher puzzle.
+5. Unlock the first piece of evidence.
+6. Progress through the additional evidence puzzles.
+7. Investigate the suspect dossiers.
+8. Interrogate the suspects.
+9. Identify contradictions in their statements.
+10. Use the investigation board to connect the evidence.
+11. Make the final accusation.
+12. File the investigation report.
+13. Download the generated case report.
 
 ---
 
-## Technologies Used
+## Screenshots
 
-- HTML
-- CSS
-- JavaScript
-- React
-- React Hooks
-- Vite
+### TRACE Landing Page
+
+![TRACE Landing Page](image.png)
 
 ---
 
-## React Concepts Used
+## Project Purpose
 
-The project uses React state, event handling, and conditional rendering to control the investigation flow.
+TRACE was created as an interactive way of demonstrating web development concepts through a fictional digital investigation.
 
-### Examples
-
-- `useState` for managing investigation progress and user interactions
-- Conditional rendering for locked and unlocked evidence
-- Event handlers for buttons, puzzles, and investigation actions
-- Dynamic UI updates based on the current investigation state
-- Component-based React structure
-- State-driven progression through the case
+Instead of presenting information as a static webpage, the project uses user interaction and progressive state changes to make the user actively investigate the case and reach a conclusion.
 
 ---
 
-## Investigation Flow
+## Repository
 
-The investigation follows a progressive sequence:
-
-**START CASE → CASE FILE → DECRYPT TRANSMISSION → SOLVE PUZZLE → DISCOVER CLUE → ADD EVIDENCE → INVESTIGATE SUSPECTS → INTERROGATE → FIND CONTRADICTIONS → RECONSTRUCT TIMELINE → CONNECT EVIDENCE → FINAL ACCUSATION → FILE INVESTIGATION REPORT → CASE CLOSED**
-
----
-
-## How to Run Locally
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/subashinisanju-ui/TRACE-digital-investigation.git
+[View the TRACE GitHub Repository](https://github.com/subashinisanju-ui/TRACE-digital-investigation)
